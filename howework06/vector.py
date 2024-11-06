@@ -50,17 +50,17 @@ class Vector:
         for index in range(len(self.points)):
             self.points[index] /= number
 
-    def __negation__(self):
+    def __neg__(self):
         for index in range(len(self.points)):
             self.points[index] *= -1
 
     
-vector1 = Vector(3,4)
-print(vector1)
-print(vector1.__bool__())
-vector2 = Vector(2,3)
-print(vector1.__add__(vector2))
-print(vector1.__sub__(vector2))
-print(vector1.__eqq__(vector2))
-print(vector1.__len__())
-print(vector1.__abs__())
+v1 = Vector(3,4)
+print(v1)
+print(v1.__bool__())
+v2 = Vector(2,3)
+print(v1.__add__(v2))
+print(v1.__sub__(v2))
+print(v1.__eqq__(v2))
+print(v1.__len__())
+print(v1.__abs__())
